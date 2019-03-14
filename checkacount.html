@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isAcount</title>
+</head>
+<body>
+<button onclick="checkacount(prompt('Nhập 1 acount'))"> is_Acount?</button>
+<script>
+    let regexpatt=/^[a-z0-9_]{6,}$/
+    function checkacount(a) {
+        if (regexpatt.test(a)){alert("Yes")  }else {alert("No")}
+    }
+</script>
+</body>
+</html>
